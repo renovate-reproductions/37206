@@ -2,5 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "hostRules": [{
+    "matchHost": "api.github.com",
+    "enableHttp2": true
+  }]
 }
